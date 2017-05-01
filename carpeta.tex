@@ -1,0 +1,60 @@
+%        File: carpeta.tex
+%     Created: lun may 01 03:00  2017 A
+% Last Change: lun may 01 03:00  2017 A
+
+\documentclass[a4paper]{article}
+\oddsidemargin 0in
+\textwidth 6.5in
+\topmargin -1.5cm
+\textheight 22cm
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\headheight=30pt
+
+\title{Carpeta de clases \\Software en Tiempo Real \\UTN frc}
+\author{Martin Nievas}
+
+\makeindex
+\begin{document}
+\maketitle
+\pagebreak
+\makeindex
+\section{Introducción} % (fold)
+\label{sec:Introduccion}
+Este docuemento contiene las notas de clases de la materia dictada durante el 
+año 2017 en la UTN - Facultad Regional Córdoba.\\No pretende ser un material 
+de estudio solo es una forma de ordenar los temas que fuí tomando en la carpeta.
+
+\subsection{Sección crítica} % (fold)
+Es una región de código que no puede ser dividida, suelen desactivarse las 
+interrupciones antes de entrar.
+\subsection{tarea} % (fold)
+\label{sub:Tarea}
+Es una porción de código que pienza que toda la CPU está para ella sola.
+
+
+\subsection{Cambio de contexto} % (fold)
+\label{sub:Cambio de contexto}
+Cuando el kernel decide correr una tarea diferente, almacena el contexto de la 
+tarea en el área de almacenamiento de contexto.
+% subsection Cambio de contexto (end)
+\subsection{Kernel} % (fold)
+\label{sub:Kernel}
+Es una parte en un sistema multitarea encargado de la administración de las 
+tareas y la comunicación entre estas. El servicio fundamental provisto por el 
+kernel es el cambio de contexto
+% subsection Kernel (end)
+\subsection{Scheduler} % (fold)
+\label{sub:Scheduler}
+También conocido como el ``despachador" es la parte del kernel responsable de 
+asignar que tarea sigue después de la actual. La mayoría de los kernel son
+basados en prioridad.
+% subsection Scheduler (end)
+\end{document}
+
